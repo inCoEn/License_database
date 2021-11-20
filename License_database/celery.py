@@ -18,8 +18,8 @@ app.config_from_object('django.conf:settings', namespace='CELERY')
 app.autodiscover_tasks()
 
 app.conf.beat_schedule = {
-    'get_lm_stat': {
-        'task': 'SB_model.tasks.get_lm_stat',
+    'save_stats_to_db': {
+        'task': 'SB_model.tasks.save_stats_to_db',
         'schedule': 60.0
     }
 }

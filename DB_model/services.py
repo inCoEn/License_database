@@ -84,7 +84,7 @@ class IncrementCache:
                 print(f'{len(cached_increments)} increments successfully written into DB')
 
 
-class MainTableObject:
+class MainTableObjects:
     """
     Creating objects for writing into DB
     """
